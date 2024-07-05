@@ -1,30 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navigation from "./conponents/navigation";
+import Banner from "./conponents/banner";
+import Card from "./conponents/Card";
+import Footer from "./conponents/Footer";
 
 export default function Home() {
   return (
     <>
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center bg-primary p-5">
-          HEADER
-        </div>
-      </div>
-       <div className="row">
-        <div className="col-6 text-center bg-warning p-5">
-         CONTENT1
-        </div>
-        <div className="col-6 text-center bg-success p-5">
-          CONTENT2
-        </div>
-       </div>
-
-       <div className="row">
-        <div className="col-12 text-center bg-danger p-5">
-          HEADER
-        </div>
-      </div>
-    </div>
+      <Navigation />
+      <Banner />
+      <Card />
+      <Footer />
     </>
   );
 }
